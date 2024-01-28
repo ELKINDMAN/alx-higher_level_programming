@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-
+"""This is a documentation for a square module
+    instantiates size and checks for errors
+ """
 class Square:
     """Square: A class that defines a square by: (based on 1-square.py).
     Private instance attribute: size

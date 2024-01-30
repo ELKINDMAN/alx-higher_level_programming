@@ -1,34 +1,37 @@
 #!/usr/bin/python3
-
 """This is a documentation for a square module
     there is no functionality to it
  """
 class Square:
-'''class Square that defines a square by: (based on 3-square.py) '''
+    """
+    Description of the class Square
 
-    def __init__(self, size=0):
-        '''public initialization method'''
-
+    Attributes:
+        size: The size of a square is crucial for a square, many things depend of it
+    """
+    def __init__(self, size=0) -> None:
         self.__size = size
+
+        if not isinstance(size, int):
+            raise TypeError("size must be an integer")
+        if size < 0:
+            raise ValueError("size must be >= 0")
+        
+    def area(self):
+        """Method to calculate the area of a square"""
+        value = self.__size ** 2
+        return value
     @property
     def size(self):
-        '''getter property to retrive __size'''
-
-        print("retrieving a private attr...")
+        """return the size of the square"""
         return self.__size
-
+    
     @size.setter
     def size(self, value):
-        '''property setter to modify the private attr...'''
-        if not type(value) is int:
+        """Set the size of the square """
+        self.__size = value
+        
+        if not isinstance(self.__size, int):
             raise TypeError("size must be an integer")
-        elif value < 0:
+        if self.__size < 0:
             raise ValueError("size must be >= 0")
-        else:
-            self.__size = value
-
-    def area(self):
-        '''public method: returns the current square area'''
-
-        sqA = self.__size ** 2
-        return sqA

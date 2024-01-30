@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
-'''a module for python class "Square"...'''
-
+"""This is a documentation for a square module
+    there is no functionality to it
+ """
 class Square:
 '''class Square that defines a square by: (based on 3-square.py) '''
 

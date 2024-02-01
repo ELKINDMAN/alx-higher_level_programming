@@ -3,5 +3,11 @@
 A documentation of a simple module with only a class
 class: Rectangle
 '''
+
+
 class Rectangle:
-     pass
+
+    """
+    Just an empty class called Rectangle
+    """
+    pass

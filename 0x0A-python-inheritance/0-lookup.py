@@ -1,11 +1,18 @@
 #!/usr/bin/python3
-'''
-that returns the list of available attributes and method
-'''
-def lookup(obj):
 
-    '''Prototype: def lookup(obj):
-    returns a list object
-    You are not allowed to import any module'''
+"""This module contains a function that list ll the attributes
+   and methdos of an object.
+"""
 
-    print(dir(obj))
+
+def lookup(object):
+    """this function returns all the available methods and
+       and attributes of an object.
+
+       Args:
+           object (any): this is the object parameter of the function.
+       Returns:
+           a list of all methods and attributes.
+    """
+
+    return list(dir(object))

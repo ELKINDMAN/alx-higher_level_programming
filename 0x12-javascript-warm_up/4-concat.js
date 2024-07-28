@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const innerString = 'is';
-const firstString = process.argv[2];
-const secondString = process.argv[3];
-console.log(firstString, innerString, secondString);
+const firstArg = process.argv[2];
+const secondArg = process.argv[3];
+
+console.log(`${firstArg} is ${secondArg}`);

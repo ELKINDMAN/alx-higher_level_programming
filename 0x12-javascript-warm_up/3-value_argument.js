@@ -1,4 +1,9 @@
 #!/usr/bin/node
 
-const cmdLineArgv = process.argv[2];
-console.log(cmdLineArgv || 'No argument');
+const firstArg = process.argv[2];
+
+if (firstArg === undefined) {
+	  console.log('No argument');
+} else {
+	  console.log(firstArg);
+}

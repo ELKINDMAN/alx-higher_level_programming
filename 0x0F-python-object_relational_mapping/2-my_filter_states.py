@@ -18,7 +18,7 @@ if __name__ == "__main__":
     cur.execute(query)
     result = cur.fetchall()
     for res in result:
-    print(res)
+        print(res)
 
     cur.close()
     db.close()

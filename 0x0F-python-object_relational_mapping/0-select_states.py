@@ -8,7 +8,8 @@ if __name__ == "__main__":
     password = args[2]
     database = args[3]
 
-    db = MySQLdb.connect(host='localhost', user=user, password=password, port=3306, db=database)
+    db = MySQLdb.connect(host='localhost', user=user,
+            password=password, port=3306, database=database)
 
     dcur = db.cursor()
     dbquery = """SELECT * FROM states ORDER BY id ASC"""

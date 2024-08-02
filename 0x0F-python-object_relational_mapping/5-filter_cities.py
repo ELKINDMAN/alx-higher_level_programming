@@ -25,7 +25,7 @@ if __name__ == "__main__":
         INNER JOIN states ON cities.state_id = states.id
         WHERE states.name LIKE %s
         ORDER BY states.id"""
-    db_cur.execute(query, (state_name))
+    db_cur.execute(db_query, (state_name))
     result = db_cur.fetchall()
     val = ''
     for x in result:

@@ -29,4 +29,4 @@ if __name__ == "__main__":
         print(r)
 
     db_cur.close()
-    db_connect()
+    db_connect.close()

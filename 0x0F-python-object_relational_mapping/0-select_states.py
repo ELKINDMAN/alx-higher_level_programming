@@ -18,5 +18,5 @@ if __name__ == "__main__":
     for x in dbresult:
         print(x)
 
-        dcur.close()
-        db.close()
+    dcur.close()
+    db.close()

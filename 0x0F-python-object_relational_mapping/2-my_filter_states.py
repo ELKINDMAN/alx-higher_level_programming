@@ -12,9 +12,9 @@ if __name__ == "__main__":
     db = MySQLdb.connect(host='localhost', user=user,
                             password=password, port=3306, database=database)
 
-    cur = db.cursor
+    cur = db.cursor()
     query = 'SELECT * FROM states WHERE BINARY
-            name = "{}" ORDER BY id'.format(user_arg)
+            name = "{}" ORDER BY id ASC'.format(user_arg)
     cur.execute(query)
     result = cur.fetchall()
     for res in result:

@@ -11,7 +11,7 @@ if __name__ == "__main__":
             .format(sys.argv[1], sys.argv[2], sys.argv[3]), pool_pre_ping=True)
     Base.metadata.create_all(bind=engine)
 
-    session = Session9bind=engine)
+    session = Session(bind=engine)
 
     result = session.query(State).get(2)
     result.name = 'New Mexico'
